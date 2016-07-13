@@ -1,0 +1,24 @@
+language: java
+jdk:
+  - oraclejdk8
+
+notifications:
+  # Email notifications are disabled to not annoy anybody.
+  # See http://about.travis-ci.org/docs/user/build-configuration/ to learn more
+  # about configuring notification recipients and more.
+  #webhooks:
+  email: false
+
+# get us on the new container based builds, we're not using any fancyness
+sudo: false
+
+# Travis CI can automatically deploy your Heroku application after a successful build.
+deploy:
+  provider: heroku
+  # Encrypted Heroku api key
+  api_key:
+    secure: "1f15b7ad-6424-4a11-8eb4-73082deb0345"
+  # Deploy different branches to different applications
+  app:
+    master: reserveyourroom-b-staging
+    #production: reserveyourroom-b-production
