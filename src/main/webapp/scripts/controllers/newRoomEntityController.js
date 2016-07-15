@@ -1,5 +1,5 @@
 
-angular.module('reserveYourRoomBackend').controller('NewRoomEntityController', function ($scope, $location, locationParser, flash, RoomEntityResource ) {
+angular.module('reserveyourroombackend').controller('NewRoomEntityController', function ($scope, $location, locationParser, flash, RoomEntityResource ) {
     $scope.disabled = false;
     $scope.$location = $location;
     $scope.roomEntity = $scope.roomEntity || {};

@@ -13,12 +13,12 @@ notifications:
 sudo: false
 
 # Travis CI can automatically deploy your Heroku application after a successful build.
-deploy:
-  provider: heroku
-  # Encrypted Heroku api key
-  api_key:
-    secure: "1f15b7ad-6424-4a11-8eb4-73082deb0345"
-  # Deploy different branches to different applications
-  app:
-    master: reserveyourroom-b-staging
-    #production: reserveyourroom-b-production
+#deploy:
+#  provider: heroku
+#  # Encrypted Heroku api key
+#  api_key:
+#    secure: "1f15b7ad-6424-4a11-8eb4-73082deb0345"
+#  # Deploy different branches to different applications
+#  app:
+#    master: reserveyourroom-b-staging
+#    #production: reserveyourroom-b-production

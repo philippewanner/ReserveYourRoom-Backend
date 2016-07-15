@@ -1,6 +1,6 @@
 
 
-angular.module('reserveYourRoomBackend').controller('SearchRoomEntityController', function($scope, $http, $filter, RoomEntityResource ) {
+angular.module('reserveyourroombackend').controller('SearchRoomEntityController', function($scope, $http, $filter, RoomEntityResource ) {
 
     $scope.search={};
     $scope.currentPage = 0;

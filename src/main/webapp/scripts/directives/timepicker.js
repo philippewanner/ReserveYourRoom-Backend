@@ -1,7 +1,7 @@
 'use strict';
 
 var TIME_REGEX = /^([0-5][0-9])\:([0-5][0-9])(?:\:([0-5][0-9]))?$/;
-angular.module('reserveYourRoomBackend').directive('time', function($parse, dateFilter) {
+angular.module('reserveyourroombackend').directive('time', function($parse, dateFilter) {
     return {
         restrict : "E",
         replace : true,

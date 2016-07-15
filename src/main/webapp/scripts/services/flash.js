@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reserveYourRoomBackend').factory('flash', ['$rootScope', function ($rootScope) {
+angular.module('reserveyourroombackend').factory('flash', ['$rootScope', function ($rootScope) {
     var messages = [];
     var currentMessage = {};
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reserveYourRoomBackend').filter('startFrom', function() {
+angular.module('reserveyourroombackend').filter('startFrom', function() {
     return function(input, start) {
         start = +start; //parse to int
         return input.slice(start);

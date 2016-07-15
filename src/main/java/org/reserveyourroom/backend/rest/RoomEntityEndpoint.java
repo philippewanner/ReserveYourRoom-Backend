@@ -17,7 +17,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriBuilder;
@@ -33,9 +32,7 @@ import org.reserveyourroom.backend.model.RoomEntity;
  */
 @Stateless
 @Path("/roomentities")
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
-@Api(value = "/room")
+@Api(value = "/roomentities", description = "my description for RoomEndpoint")
 public class RoomEntityEndpoint {
 	@PersistenceContext(unitName = "ReserveYourRoom-Backend-persistence-unit")
 	private EntityManager em;
@@ -63,10 +60,6 @@ public class RoomEntityEndpoint {
 	@GET
 	@Path("/{id:[0-9][0-9]*}")
 	@Produces("application/json")
-	@ApiOperation(value = "Find a room by id")
-	@ApiResponses(value = {
-			@ApiResponse(code = 200, message = "The service has found a room for the given id"),
-			@ApiResponse(code = 400, message = "Bad Request (read the error message)") })
 	public Response findById(@PathParam("id") Long id) {
 		TypedQuery<RoomEntity> findByIdQuery = em
 				.createQuery(

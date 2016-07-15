@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reserveYourRoomBackend').filter('searchFilter', function() {
+angular.module('reserveyourroombackend').filter('searchFilter', function() {
 
     function matchObjectProperties(expectedObject, actualObject) {
         var flag = true;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reserveYourRoomBackend').controller('FlashController', ['$scope','flash', function ($scope, flash) {
+angular.module('reserveyourroombackend').controller('FlashController', ['$scope','flash', function ($scope, flash) {
     $scope.flash = flash;
     $scope.showAlert = false;
 
